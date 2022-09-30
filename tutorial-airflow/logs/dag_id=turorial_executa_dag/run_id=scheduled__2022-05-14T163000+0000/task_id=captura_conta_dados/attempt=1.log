@@ -1,0 +1,23 @@
+[2022-05-14 18:14:45,101] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: turorial_executa_dag.captura_conta_dados scheduled__2022-05-14T16:30:00+00:00 [queued]>
+[2022-05-14 18:14:45,112] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: turorial_executa_dag.captura_conta_dados scheduled__2022-05-14T16:30:00+00:00 [queued]>
+[2022-05-14 18:14:45,112] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-14 18:14:45,112] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-05-14 18:14:45,113] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-14 18:14:45,389] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): captura_conta_dados> on 2022-05-14 16:30:00+00:00
+[2022-05-14 18:14:45,395] {standard_task_runner.py:52} INFO - Started process 334 to run task
+[2022-05-14 18:14:45,399] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'turorial_executa_dag', 'captura_conta_dados', 'scheduled__2022-05-14T16:30:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/tutorial_executa_dag.py', '--cfg-path', '/tmp/tmpy6aku4nb', '--error-file', '/tmp/tmp5l_6yviy']
+[2022-05-14 18:14:45,400] {standard_task_runner.py:80} INFO - Job 3: Subtask captura_conta_dados
+[2022-05-14 18:14:45,840] {task_command.py:369} INFO - Running <TaskInstance: turorial_executa_dag.captura_conta_dados scheduled__2022-05-14T16:30:00+00:00 [running]> on host c887a86e9114
+[2022-05-14 18:14:47,205] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=turorial_executa_dag
+AIRFLOW_CTX_TASK_ID=captura_conta_dados
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-14T16:30:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-05-14T16:30:00+00:00
+[2022-05-14 18:14:51,411] {python.py:173} INFO - Done. Returned value was: 802
+[2022-05-14 18:14:51,707] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=turorial_executa_dag, task_id=captura_conta_dados, execution_date=20220514T163000, start_date=20220514T181445, end_date=20220514T181451
+[2022-05-14 18:14:52,324] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-05-14 18:14:52,722] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

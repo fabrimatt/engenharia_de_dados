@@ -1,0 +1,28 @@
+[2022-05-14 18:15:00,297] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: turorial_executa_dag.nvalido scheduled__2022-05-14T16:30:00+00:00 [queued]>
+[2022-05-14 18:15:00,310] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: turorial_executa_dag.nvalido scheduled__2022-05-14T16:30:00+00:00 [queued]>
+[2022-05-14 18:15:00,310] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-14 18:15:00,311] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-05-14 18:15:00,311] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-14 18:15:00,428] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): nvalido> on 2022-05-14 16:30:00+00:00
+[2022-05-14 18:15:00,434] {standard_task_runner.py:52} INFO - Started process 349 to run task
+[2022-05-14 18:15:00,436] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'turorial_executa_dag', 'nvalido', 'scheduled__2022-05-14T16:30:00+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/tutorial_executa_dag.py', '--cfg-path', '/tmp/tmpfn_2eius', '--error-file', '/tmp/tmp9z14i12i']
+[2022-05-14 18:15:00,437] {standard_task_runner.py:80} INFO - Job 5: Subtask nvalido
+[2022-05-14 18:15:00,538] {task_command.py:369} INFO - Running <TaskInstance: turorial_executa_dag.nvalido scheduled__2022-05-14T16:30:00+00:00 [running]> on host c887a86e9114
+[2022-05-14 18:15:02,652] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=turorial_executa_dag
+AIRFLOW_CTX_TASK_ID=nvalido
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-14T16:30:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-05-14T16:30:00+00:00
+[2022-05-14 18:15:02,654] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-05-14 18:15:02,655] {subprocess.py:74} INFO - Running command: ['bash', '-c', "echo 'Quantidade não ok'"]
+[2022-05-14 18:15:02,668] {subprocess.py:85} INFO - Output:
+[2022-05-14 18:15:02,670] {subprocess.py:92} INFO - Quantidade não ok
+[2022-05-14 18:15:02,670] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-05-14 18:15:03,110] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=turorial_executa_dag, task_id=nvalido, execution_date=20220514T163000, start_date=20220514T181500, end_date=20220514T181503
+[2022-05-14 18:15:03,179] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-05-14 18:15:03,254] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
